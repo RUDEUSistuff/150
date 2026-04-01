@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<canvas id="sakura"></canvas>
+
+<div id="start">
+<h1>☢️ AI Calculator</h1>
+<p>
+Advanced AI system for Math, Physics, 3D, Graphs, Atoms & Puzzles.<br>
+Solve, simulate, and dominate.
+</p>
+<button onclick="startApp()">START</button>
+</div>
+
+<div id="app">
+
+<div class="menu">
+<button onclick="setMode('math')">Math</button>
+<button onclick="setMode('physics')">Physics</button>
+<button onclick="setMode('3d')">3D</button>
+<button onclick="setMode('graph')">Graph</button>
+<button onclick="setMode('atoms')">Atoms</button>
+<button onclick="setMode('puzzle')">Puzzle</button>
+</div>
+
+<input id="input" placeholder="Type equation or command...">
+
+<div id="controls"></div>
+<div id="canvas"></div>
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+<p id="xp">XP: 0 | Level: 1</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
